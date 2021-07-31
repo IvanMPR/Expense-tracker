@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_part">
+        <h1>Expense tracker</h1>
+        <label for="text">Expense location</label>
+        <input type="text" id="location" />
+      </div>
+      <div class="date_and_amount">
+        <div class="date">
+          <label for="date">Pick a date</label>
+          <input type="date" id="date" />
+        </div>
+        <button id="btn">Add Item</button>
+        <div class="amount">
+          <label for="text">Expense amount</label>
+          <input type="text" id="amount" />
+        </div>
+      </div>
+      <div class="expense_fields">
+        <table id="table">
+          <thead>
+            <tr>
+              <th colspan="3">Your list of noted expenses</th>
+            </tr>
+          </thead>
+          <tr>
+            <th id="lo">Location</th>
+            <th id="da">Date</th>
+            <th id="am">Amount</th>
+          </tr>
+          <tr></tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
