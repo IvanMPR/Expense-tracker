@@ -4,11 +4,13 @@ const amount = document.getElementById("amount");
 const button = document.getElementById("btn");
 const table = document.getElementById("table");
 // ////////////////////////////////////////////////////
+const myStorage = window.localStorage;
+// ////////////////////////////////////////////////////
 window.addEventListener("load", () => {
   loc.focus();
 });
 // ////////////////////////////////////////////////////
-window.addEventListener("click", function (e) {
+table.addEventListener("click", function (e) {
   if (!e.target.classList.contains("close")) return;
   e.target.parentElement.parentElement.remove();
 });
@@ -38,11 +40,11 @@ function addNewItem() {
     x.classList.add("close");
     x.appendChild(xInput);
     thirdC.appendChild(x);
+    // ////////////////////////////////////////////////
   }
 }
 
 button.addEventListener("click", addNewItem);
 
-// let myStorage = window.localStorage;
 // myStorage.setItem('first', 'value')
-// console.log(myStorage);
+console.log(myStorage.length);
